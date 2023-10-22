@@ -17,12 +17,12 @@ class SuperSliverList extends SliverMultiBoxAdaptorWidget {
   RenderSliverMultiBoxAdaptor createRenderObject(BuildContext context) {
     final SliverMultiBoxAdaptorElement element =
         context as SliverMultiBoxAdaptorElement;
-    return _RenderSuperSliverList(childManager: element);
+    return RenderSuperSliverList(childManager: element);
   }
 }
 
-class _RenderSuperSliverList extends RenderSliverMultiBoxAdaptor {
-  _RenderSuperSliverList({required super.childManager});
+class RenderSuperSliverList extends RenderSliverMultiBoxAdaptor {
+  RenderSuperSliverList({required super.childManager});
 
   /// When true the layout offsets of children are the actual offsets. This
   /// will be true while scrolling from beginning to end without jumping out
